@@ -10,13 +10,12 @@ import {EmployeeService}  from './topic-1/employee.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListEmployeesComponent } from './topic-1/list-employees/list-employees.component';
-import { CreateEmployeeComponent } from './topic-2/create-employee/create-employee.component';
-import { CreateModuleModule } from './create-module/create-module.module';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { EventsComponent } from './events/events.component';
-import { SpecialEventsComponent } from './special-events/special-events.component';
+import { CreateEmployeeComponent } from './topic-1/create-employee/create-employee.component';
+import { CreateModuleModule } from './topic-1/create-module/create-module.module';
+import { LoginComponent } from './topic-1/login/login.component';
 import { CreateDirectiveDirective } from './create-directive.directive';
+import { DisplayEmployeeComponent } from './topic-3/display-employee/display-employee.component';
+
 
 const appRoutes: Routes=[
 {
@@ -36,18 +35,8 @@ const appRoutes: Routes=[
   path: 'login',
   component:LoginComponent
 },
-{
-  path: 'register',
-  component:RegisterComponent
-},
-{
-  path: 'events',
-  component:EventsComponent
-},
-{
-  path: 'special',
-  component:SpecialEventsComponent
-},
+
+
 
 ];
 @NgModule({
@@ -55,11 +44,10 @@ const appRoutes: Routes=[
     AppComponent,
     ListEmployeesComponent,
     CreateEmployeeComponent,
-    RegisterComponent,
     LoginComponent,
-    EventsComponent,
-    SpecialEventsComponent,
-    CreateDirectiveDirective
+    CreateDirectiveDirective,
+    DisplayEmployeeComponent,
+    
   ],
   imports: [
     BrowserModule,

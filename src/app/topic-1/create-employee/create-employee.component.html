@@ -1,4 +1,4 @@
-<form  (ngSubmit)="saveEmployee(registerData)">
+<form  (ngSubmit)="saveEmployee()">
 <div class="panel panel-primary" >
     <div class="panel-heading">
          <h3 class="panel-title">Create Employee</h3>
@@ -7,7 +7,7 @@
     <div class="panel-body">
         <div class="form-group">
             <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" [(ngModel)]="registerData.fullName" type="text" class="form-control">
+            <input id="fullName" name="fullName" [(ngModel)]="fullName" type="text" class="form-control">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <label for="phoneNumber">Phone Number</label>
-            <input id="phoneNumber" name="phoneNumber" [(ngModel)]="registerData.phoneNumber" type="text" class="form-control">
+            <input id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" type="text" class="form-control">
         </div>
         
         <div class="form-group">
@@ -23,12 +23,12 @@
             <div class="form-control">
                 <label class="radio-inline">
                     
-                    <input type="radio" value="Male" name="gender" [(ngModel)]="registerData.gender">
+                    <input type="radio" value="Male" name="gender" [(ngModel)]="gender">
                     Male
                 </label>
                 <label class="radio-inline">
                     
-                    <input type="radio" value="Female" name="gender" [(ngModel)]="registerData.gender">
+                    <input type="radio" value="Female" name="gender" [(ngModel)]="gender">
                     Female
                 </label>
             </div>
@@ -38,7 +38,7 @@
         <div class="form-group">
             <div class="form-control">
                 <label class="checkbox-inline">
-                    <input type="checkbox"  name="isActive" [(ngModel)]="registerData.isActive">
+                    <input type="checkbox"  name="isActive" [(ngModel)]="isActive">
                     Is Active
                 </label>
         
@@ -48,7 +48,7 @@
 
         <div class="form-group">
             <label for="department">Department</label>
-            <select id="department" name="department" [(ngModel)]="registerData.department" class="form-control">
+            <select id="department" name="department" [(ngModel)]="department" class="form-control">
                 <option *ngFor="let dept of departments" [value]="dept.id">
                     {{dept.name}}
                 </option>
@@ -59,7 +59,7 @@
 
         <div class="form-group">
             <label for="dob">Date of birth</label>
-            <input id="dob" name="dob" [(ngModel)]="registerData.dob" type="date" class="form-control">
+            <input id="dob" name="dob" [(ngModel)]="dob" type="date" class="form-control">
         </div>
 
         

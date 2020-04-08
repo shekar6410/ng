@@ -7,27 +7,25 @@ import {Department} from 'src/app/models/department.model';
   styleUrls: ['./create-employee.component.css']
 })
 export class CreateEmployeeComponent implements OnInit {
-  departments:Department[]=[{
-    id:1,
-    name:"IT"
-  },
-{id:2, name:"QA"}]
-// email = '';
-// fullName='';
-// gender='Male';
-// phoneNumber='';
-// isActive=true;
-// department='1';
-// dob='';
-registerData=''
+  departments:Department[]=[
+{id:1,name:"IT"},
+{id:2, name:"QA"}];
+
+email = '';
+fullName='';
+gender='Male';
+phoneNumber='';
+isActive=true;
+department='1';
+dob='';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  saveEmployee(user){
-    console.log(user);
+  saveEmployee(){
+    
 
   }
 

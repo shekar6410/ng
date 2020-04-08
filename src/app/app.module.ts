@@ -15,6 +15,7 @@ import { CreateModuleModule } from './topic-1/create-module/create-module.module
 import { LoginComponent } from './topic-1/login/login.component';
 import { CreateDirectiveDirective } from './create-directive.directive';
 import { DisplayEmployeeComponent } from './topic-3/display-employee/display-employee.component';
+import { ComponentLifeCycleComponent } from './topic-4/component-life-cycle/component-life-cycle.component';
 
 
 const appRoutes: Routes=[
@@ -47,6 +48,7 @@ const appRoutes: Routes=[
     LoginComponent,
     CreateDirectiveDirective,
     DisplayEmployeeComponent,
+    ComponentLifeCycleComponent,
     
   ],
   imports: [

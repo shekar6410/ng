@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-component-life-cycle',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-life-cycle.component.css']
 })
 export class ComponentLifeCycleComponent implements OnInit {
-
+@Input() simpleInput:string;
   constructor() { }
 
   ngOnInit(): void {

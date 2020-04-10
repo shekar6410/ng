@@ -6,8 +6,8 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
   styleUrls: ['./component-life-cycle.component.css']
 })
 export class ComponentLifeCycleComponent implements OnInit, OnChanges{
-  simpleInput='Shekar';
-@Input() diplayName=this.simpleInput;
+  userText='Shekar';
+@Input() simpleInput=this.userText;
   constructor() { }
 
   ngOnInit(): void {

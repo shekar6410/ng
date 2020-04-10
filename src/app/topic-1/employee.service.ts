@@ -30,4 +30,8 @@ export class EmployeeService{
         return this.listEmployees;
     }
 
+    getEmployee(id):Employee{
+        return this.listEmployees.find(e => e.id === id);
+    }
+
 }

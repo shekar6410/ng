@@ -16,6 +16,7 @@ import { LoginComponent } from './topic-1/login/login.component';
 import { CreateDirectiveDirective } from './create-directive.directive';
 import { DisplayEmployeeComponent } from './topic-3/display-employee/display-employee.component';
 import { ComponentLifeCycleComponent } from './topic-4/component-life-cycle/component-life-cycle.component';
+import { EmployeeDetailsComponent } from './topic-5/employee-details/employee-details.component';
 
 
 const appRoutes: Routes=[
@@ -39,6 +40,10 @@ const appRoutes: Routes=[
 {
   path:'lifeCycle',
   component:ComponentLifeCycleComponent
+},
+{
+  path:'employee/:id',
+  component:EmployeeDetailsComponent
 }
 
 
@@ -53,6 +58,7 @@ const appRoutes: Routes=[
     CreateDirectiveDirective,
     DisplayEmployeeComponent,
     ComponentLifeCycleComponent,
+    EmployeeDetailsComponent,
     
   ],
   imports: [

@@ -1,4 +1,8 @@
-<h1>
-    You entered {{diplayName}}
-</h1>
-<input type="text" [(ngModel)]="simpleInput">
+
+<div class="form-group">
+    <label for="text">Enter text</label>
+    <input id="text" name="text" type="text" [(ngModel)]="userText" class="form-control">
+</div>
+<div *ngIf="userText">
+    <h1 class="form control">Your text {{userText}}</h1>
+</div>

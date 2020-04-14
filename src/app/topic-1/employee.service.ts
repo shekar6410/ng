@@ -5,25 +5,25 @@ export class EmployeeService{
     private listEmployees:Employee[]=
     [{
         id:1,
-        name:'Shekar',
+        name:'Prabhas',
         gender:'Male',
-        contactPreference:'Email',
         phoneNumber:9999999999,
-        email:'shekar.6410@gmail.com',
+        email:'prabhas@gmail.com',
         department:'IT',
         isActive:true,
-        photoPath:'assets/images/male.png'
+        photoPath:'assets/images/prabhas.webp',
+        dob:new Date(3/15/1991)
       },
     {
          id:2,
-        name:'Maheshwari',
+        name:'Pooja',
         gender:'Female',
-        contactPreference:'Email',
         phoneNumber:9999999999,
-        email:'maheshwari@gmail.com',
-        department:'IT',
+        email:'pooja@gmail.com',
+        department:'QA',
         isActive:true,
-        photoPath:'assets/images/female.png'
+        dob:new Date(3/15/1991),
+        photoPath:'assets/images/pooja.jfif'
     
     }]
     getEmployees():Employee[]{

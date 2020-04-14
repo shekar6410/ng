@@ -19,6 +19,7 @@ import { ComponentLifeCycleComponent } from './topic-4/component-life-cycle/comp
 import { EmployeeDetailsComponent } from './topic-5/employee-details/employee-details.component';
 
 
+
 const appRoutes: Routes=[
 {
   path:'list',
@@ -59,6 +60,7 @@ const appRoutes: Routes=[
     DisplayEmployeeComponent,
     ComponentLifeCycleComponent,
     EmployeeDetailsComponent,
+    
     
   ],
   imports: [
